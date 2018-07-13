@@ -16,7 +16,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return new ArticlesResource(Article::with(['author', 'comments.author'])->paginate());
+//        return new ArticlesResource(Article::with(['author', 'comments.author'])->paginate(2));
+        return new ArticlesResource(Article::paginate(2));
+
     }
 
     /**

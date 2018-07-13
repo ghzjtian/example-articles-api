@@ -4,6 +4,11 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\Resource;
 
+/**
+ * 给别的 Resource 使用的方法
+ * Class CommentIdentifierResource
+ * @package App\Http\Resources
+ */
 class CommentIdentifierResource extends Resource
 {
     /**

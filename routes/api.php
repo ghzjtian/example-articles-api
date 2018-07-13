@@ -26,27 +26,27 @@ Route::get(
     'articles/{article}/relationships/author',
     [
         'uses' => \App\Http\Controllers\ArticleRelationshipController::class . '@author',
-        'as'   => 'articles.relationships.author',
+        'as' => 'articles.relationships.author',
     ]
 );
 Route::get(
     'articles/{article}/author',
     [
         'uses' => \App\Http\Controllers\ArticleRelationshipController::class . '@author',
-        'as'   => 'articles.author',
+        'as' => 'articles.author',
     ]
 );
 Route::get(
     'articles/{article}/relationships/comments',
     [
         'uses' => \App\Http\Controllers\ArticleRelationshipController::class . '@comments',
-        'as'   => 'articles.relationships.comments',
+        'as' => 'articles.relationships.comments',
     ]
 );
 Route::get(
     'articles/{article}/comments',
     [
         'uses' => \App\Http\Controllers\ArticleRelationshipController::class . '@comments',
-        'as'   => 'articles.comments',
+        'as' => 'articles.comments',
     ]
 );

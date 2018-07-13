@@ -15,6 +15,7 @@ class ArticleRelationshipResource extends Resource
      */
     public function toArray($request)
     {
+//        dd($this->author);
         return [
             'author'   => [
                 'links' => [
