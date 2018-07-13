@@ -12,5 +12,13 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+
+
+
+        factory(App\People::class,20)->create();
+        //还不知道怎么向关联插入数据.!!
+        factory(App\Article::class,20)->create();
+        factory(App\Comment::class,20)->create();
+
     }
 }
